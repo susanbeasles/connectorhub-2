@@ -1,0 +1,1 @@
+ALTER TABLE public.oauth_requests ADD COLUMN IF NOT EXISTS webauthn_credential_id uuid REFERENCES public.webauthn_credentials(id) ON DELETE SET NULL;
